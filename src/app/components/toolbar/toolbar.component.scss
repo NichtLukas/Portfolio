@@ -1,0 +1,26 @@
+.toolbar{
+    background-color: white;
+    font-family: "Consolas";
+}
+.toolbar-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.toolbar-object{
+    width: auto;
+    text-align: center;
+
+    background: 
+    linear-gradient(currentColor 0 0) 
+    bottom /var(--d, 0) 3px 
+    no-repeat;
+    transition:0.5s;
+}
+
+.toolbar-object:hover {
+    --d: 100%;
+    color: 	 #33adff;
+}
+
