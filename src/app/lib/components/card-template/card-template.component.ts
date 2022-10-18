@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CardTemplate } from './card-template.interface';
+
 
 @Component({
   selector: 'app-card-template',
@@ -7,8 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardTemplateComponent implements OnInit {
 
-  @Input() text: string = "";
-
+  @Input() cardTemplate!: CardTemplate;
   constructor() { }
 
   ngOnInit(): void {

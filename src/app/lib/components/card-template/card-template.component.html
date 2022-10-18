@@ -1,10 +1,11 @@
+
 <mat-card class="example-card">
     <mat-card-title-group>
-      <mat-card-title>{{text}}</mat-card-title>
-      <mat-card-subtitle>Small</mat-card-subtitle>
-      <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+      <mat-card-title>{{cardTemplate.title}}</mat-card-title>
+      <mat-card-subtitle>{{cardTemplate.subtitle}}</mat-card-subtitle>
+      <img mat-card-sm-image src = "{{cardTemplate.img}}" >
     </mat-card-title-group>
     <mat-card-content>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestiae quas vero doloremque impedit optio? Maxime, autem sunt doloremque odit reprehenderit ducimus dignissimos veritatis, corrupti, numquam facilis harum asperiores? Nobis.
+      {{cardTemplate.text}}
     </mat-card-content>
   </mat-card>
